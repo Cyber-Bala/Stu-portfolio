@@ -23,6 +23,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#journey">Journey</a></li>
             <li><a href="#skills-full">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
 
@@ -43,6 +44,7 @@
         <a href="#about" onclick="closeMenu()">About</a>
         <a href="#journey" onclick="closeMenu()">Journey</a>
         <a href="#skills-full" onclick="closeMenu()">Skills</a>
+        <a href="#projects" onclick="closeMenu()">Projects</a>
         <a href="#contact" onclick="closeMenu()">Contact</a>
         <button class="btn-cta" onclick="handleCTA(this); closeMenu()">Say Hello! 👋</button>
     </div>
@@ -125,7 +127,7 @@
                     <div class="stat-label">Class 10 Score</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-num">12+</div>
+                    <div class="stat-num">6+</div>
                     <div class="stat-label">Projects Built</div>
                 </div>
                 <div class="stat-card">
@@ -367,6 +369,151 @@
                     <div class="skill-bar-track">
                         <div class="skill-bar-fill" data-width="72"></div>
                     </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================
+       PROJECTS
+  ================================================ -->
+    <section class="projects" id="projects" aria-label="Projects section">
+        <div class="section-tag reveal">🛠️ Projects</div>
+        <h2 class="section-heading reveal">Things I've built.</h2>
+        <p class="section-sub reveal">
+            A mix of school projects, personal experiments, and things I built just for fun.
+        </p>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#7c3aed,#ec4899)">🚌</div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link" aria-label="View code">
+                            <span>🔗</span> Code
+                        </a>
+                        <a href="#" class="proj-link" aria-label="Live demo">
+                            <span>🚀</span> Demo
+                        </a>
+                    </div>
+                </div>
+                <h3 class="project-title">Chennai Bus Tracker</h3>
+                <p class="project-desc">
+                    A real-time web app that shows live bus arrival times for Chennai routes.
+                    Built with HTML, CSS &amp; JavaScript using a public transit API.
+                </p>
+                <div class="project-tags">
+                    <span class="ptag">JavaScript</span>
+                    <span class="ptag">HTML/CSS</span>
+                    <span class="ptag">REST API</span>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#0ea5e9,#14b8a6)">☁️</div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><span>🔗</span> Code</a>
+                        <a href="#" class="proj-link"><span>🚀</span> Demo</a>
+                    </div>
+                </div>
+                <h3 class="project-title">Weather Dashboard</h3>
+                <p class="project-desc">
+                    Displays live weather data for any city using OpenWeather API.
+                    Shows temperature, humidity, wind speed, and a 5-day forecast.
+                </p>
+                <div class="project-tags">
+                    <span class="ptag">Python</span>
+                    <span class="ptag">Flask</span>
+                    <span class="ptag">API</span>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#f97316,#eab308)">🧠</div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><span>🔗</span> Code</a>
+                        <a href="#" class="proj-link"><span>🚀</span> Demo</a>
+                    </div>
+                </div>
+                <h3 class="project-title">CS Quiz App</h3>
+                <p class="project-desc">
+                    A timed multiple-choice quiz on Computer Science topics with score tracking,
+                    topic filters, and a leaderboard stored in localStorage.
+                </p>
+                <div class="project-tags">
+                    <span class="ptag">JavaScript</span>
+                    <span class="ptag">HTML/CSS</span>
+                    <span class="ptag">localStorage</span>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#22c55e,#14b8a6)">💼</div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><span>🔗</span> Code</a>
+                        <a href="#" class="proj-link"><span>🚀</span> Demo</a>
+                    </div>
+                </div>
+                <h3 class="project-title">This Portfolio</h3>
+                <p class="project-desc">
+                    My personal student portfolio — built from scratch with pure HTML, CSS &amp; Vanilla JS.
+                    Features smooth scrolling, scroll-reveal animations, and a responsive layout.
+                </p>
+                <div class="project-tags">
+                    <span class="ptag">HTML</span>
+                    <span class="ptag">CSS</span>
+                    <span class="ptag">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#ef4444,#f97316)">📊</div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><span>🔗</span> Code</a>
+                        <a href="#" class="proj-link"><span>🚀</span> Demo</a>
+                    </div>
+                </div>
+                <h3 class="project-title">Sorting Visualizer</h3>
+                <p class="project-desc">
+                    Animates Bubble, Selection, Merge and Quick Sort in real time.
+                    Adjustable speed and array size with color-coded bar states.
+                </p>
+                <div class="project-tags">
+                    <span class="ptag">C++</span>
+                    <span class="ptag">Algorithms</span>
+                    <span class="ptag">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card reveal">
+                <div class="project-top">
+                    <div class="project-icon" style="background:linear-gradient(135deg,#8b5cf6,#3b82f6)">🤖</div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><span>🔗</span> Code</a>
+                        <a href="#" class="proj-link"><span>🚀</span> Demo</a>
+                    </div>
+                </div>
+                <h3 class="project-title">Python Calculator</h3>
+                <p class="project-desc">
+                    My very first Python project — a GUI calculator built with Tkinter.
+                    Supports all basic operations plus history and keyboard input.
+                </p>
+                <div class="project-tags">
+                    <span class="ptag">Python</span>
+                    <span class="ptag">Tkinter</span>
+                    <span class="ptag">OOP</span>
                 </div>
             </div>
 
