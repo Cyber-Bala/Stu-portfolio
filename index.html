@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ram Kumar — 11th Standard Student Portfolio</title>
+    <meta name="description"
+        content="Personal portfolio of Ram Kumar, an 11th standard Science student from Chennai passionate about coding, competitive programming, and AI." />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ================================================
+       NAV
+  ================================================ -->
+    <nav id="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-logo" aria-label="RK Logo" onclick="scrollTo({top:0,behavior:'smooth'})">RK</div>
+
+        <ul class="nav-links" role="list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#skills-full">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-badge"><span>🎓</span> Class XI — Science</div>
+
+        <button class="btn-cta desktop-cta" id="nav-cta-btn" onclick="handleCTA(this)">
+            Say Hello! 👋
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" role="menu">
+        <a href="#hero" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#journey" onclick="closeMenu()">Journey</a>
+        <a href="#skills-full" onclick="closeMenu()">Skills</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <button class="btn-cta" onclick="handleCTA(this); closeMenu()">Say Hello! 👋</button>
+    </div>
+
+    <!-- ================================================
+       HERO
+  ================================================ -->
+    <section class="hero" id="hero" aria-label="Hero section">
+
+        <!-- Left copy -->
+        <div class="hero-left">
+            <p class="hero-greeting">Vanakkam! 🙏</p>
+            <h1 class="hero-name">
+                I'm Ram<br>
+                <span class="name-accent">Kumar.</span>
+            </h1>
+            <p class="hero-desc">
+                A passionate <strong>11th Standard Science student</strong> from Chennai, Tamil Nadu.
+                I love competitive programming, building web apps, and diving into the world of AI.
+                Currently studying PCM + Computer Science and preparing for JEE 2027!
+            </p>
+            <div class="hero-actions">
+                <button class="btn-primary" id="hero-cta-btn" onclick="handleCTA(this)">
+                    Connect with Me!
+                </button>
+                <a class="coffee-link" href="#" aria-label="View my projects">
+                    <span class="coffee-arrow">↗</span> See my projects
+                </a>
+            </div>
+        </div>
+
+        <!-- Right photo -->
+        <div class="hero-right">
+            <div class="float-chip chip-a" aria-hidden="true" title="Code">&lt;/&gt;</div>
+            <div class="float-chip chip-b" aria-hidden="true" title="Math">Σ ∞</div>
+            <div class="float-chip chip-c" aria-hidden="true" title="Science">🔬</div>
+
+            <div class="dev-card" aria-label="Ram's photo">
+                <img class="dev-avatar" src="avatar.jpg" alt="Ram Kumar — student portfolio portrait" />
+                <div class="badge-tag">🏆 Competitive Coder</div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================
+       ABOUT
+  ================================================ -->
+    <section class="about" id="about" aria-label="About section">
+
+        <!-- Photo -->
+        <div class="about-img-wrap reveal">
+            <div class="about-sticker">📍 Chennai, Tamil Nadu</div>
+            <img class="about-photo" src="avatar.jpg" alt="Ram Kumar" />
+        </div>
+
+        <!-- Content -->
+        <div class="about-content reveal">
+            <div class="section-tag">🙋 About Me</div>
+            <h2 class="section-heading">A coder who loves to solve problems.</h2>
+
+            <p style="color:var(--ink-muted); margin-bottom:16px;">
+                I'm <strong style="color:var(--ink)">Ram Kumar</strong>, a 16-year-old student at
+                Sunrise International Senior Secondary School, Chennai, currently in Class 11 with Physics, Chemistry,
+                Mathematics and Computer Science (PCMC). Chennai's startup energy and an elite engineering institute's
+                campus right in the city inspire me every day!
+            </p>
+            <p style="color:var(--ink-muted);">
+                I discovered competitive programming in 9th grade through online judge platforms and haven't stopped
+                since. Outside academics, I captain my school's Coding Club, participate in state-level
+                olympiads, and mentor juniors. My dream: CSE at a top engineering college — right here in Chennai! 🚀
+            </p>
+
+            <!-- Quick stats -->
+            <div class="about-stats">
+                <div class="stat-card">
+                    <div class="stat-num">94%</div>
+                    <div class="stat-label">Class 10 Score</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">12+</div>
+                    <div class="stat-label">Projects Built</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">7+</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================================================
+       JOURNEY / TIMELINE
+  ================================================ -->
+    <section class="journey" id="journey" aria-label="Journey section">
+        <div style="max-width:780px; margin:0 auto;">
+            <div class="section-tag reveal">🗺️ My Journey</div>
+            <h2 class="section-heading reveal">Milestones along the way.</h2>
+            <p class="section-sub reveal">
+                From my first "Hello World" in a school lab to winning city-level competitions — here's my story so far.
+            </p>
+
+            <div class="timeline">
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot amber">🎓</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-date">2025 — Present</span>
+                            <span class="tl-place">Sunrise International School, Chennai</span>
+                        </div>
+                        <div class="tl-role">Class 11 — PCMC Stream</div>
+                        <p class="tl-desc">
+                            Enrolled in Physics, Chemistry, Mathematics &amp; Computer Science.
+                            Captaining the school Coding Club with 30+ members. Currently preparing
+                            for JEE 2027 and building a real-time bus-tracking app for Chennai commuters.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">🏅</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-date">2024</span>
+                            <span class="tl-place">State Junior Programming Olympiad</span>
+                        </div>
+                        <div class="tl-role">Silver — State Junior Programming Olympiad</div>
+                        <p class="tl-desc">
+                            Qualified for the Tamil Nadu State Junior Programming Olympiad (TNJPO) and
+                            secured Silver, competing in Data Structures &amp; Algorithms.
+                            Also represented school at the National School Coding League (NSCL).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">💻</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-date">2023</span>
+                            <span class="tl-place">Self-Learning + Online Courses</span>
+                        </div>
+                        <div class="tl-role">Started Competitive Programming &amp; Web Dev</div>
+                        <p class="tl-desc">
+                            Started learning C++ and competitive programming on online judge platforms
+                            (currently rated Pupil level). Built a Chennai local events finder web app
+                            and published it on GitHub. Completed an online computer science course.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot">⭐</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-date">2023</span>
+                            <span class="tl-place">IIT Madras Open Day</span>
+                        </div>
+                        <div class="tl-role">Attended a Premier Tech Institute Open Day — Got Inspired!</div>
+                        <p class="tl-desc">
+                            Visited a top engineering institute campus during their annual Open Day. Interacted with
+                            researchers in robotics and AI. Cemented my goal: study CSE at a top college.
+                            That visit changed everything for me!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-dot amber">🐍</div>
+                    <div class="tl-card">
+                        <div class="tl-meta">
+                            <span class="tl-date">2022</span>
+                            <span class="tl-place">Class 9 — School Lab</span>
+                        </div>
+                        <div class="tl-role">Wrote First Program — Python Number Guesser</div>
+                        <p class="tl-desc">
+                            My Computer Science teacher introduced Python in class. I stayed back
+                            after school every day to build a fun number-guessing game. That week
+                            started everything! Set up my own laptop and never looked back.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+       SKILLS (EXPANDED)
+  ================================================ -->
+    <section class="skills-full" id="skills-full" aria-label="Detailed skills section">
+        <div class="section-tag reveal">⚡ Skills</div>
+        <h2 class="section-heading reveal">What I know &amp; what I'm learning.</h2>
+        <p class="section-sub reveal">
+            A mix of school subjects I excel in and technical skills I've picked up on my own.
+        </p>
+
+        <!-- Quick-view skill pills -->
+        <div class="skills-bar" style="margin-bottom:32px;">
+            <div class="skill-pill"><span class="skill-icon">🐍</span> Python</div>
+            <div class="skill-pill highlight"><span class="skill-icon">💻</span> C++</div>
+            <div class="skill-pill"><span class="skill-icon">🌐</span> HTML &amp; CSS</div>
+            <div class="skill-pill"><span class="skill-icon">📐</span> Mathematics</div>
+            <div class="skill-pill"><span class="skill-icon">⚗️</span> Chemistry</div>
+            <div class="skill-pill"><span class="skill-icon">🔭</span> Physics</div>
+            <div class="skill-pill"><span class="skill-icon">🤖</span> Machine Learning</div>
+            <div class="skill-pill"><span class="skill-icon">⚡</span> JavaScript</div>
+        </div>
+
+        <div class="skills-grid">
+
+            <!-- Programming -->
+            <div class="skill-cat-card reveal">
+                <div class="skill-cat-title">
+                    <div class="skill-cat-icon">💻</div> Programming
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>C++</span><span>82%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="82"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Python</span><span>75%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>HTML &amp; CSS</span><span>80%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>JavaScript</span><span>60%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="60"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Subjects -->
+            <div class="skill-cat-card reveal">
+                <div class="skill-cat-title">
+                    <div class="skill-cat-icon">🔬</div> Science (PCMC)
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Mathematics</span><span>95%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill amber" data-width="95"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Physics</span><span>88%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill amber" data-width="88"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Chemistry</span><span>82%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill amber" data-width="82"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>CS Theory</span><span>90%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill amber" data-width="90"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitive Programming -->
+            <div class="skill-cat-card reveal">
+                <div class="skill-cat-title">
+                    <div class="skill-cat-icon">🏆</div> Competitive Programming
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Data Structures</span><span>78%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill blue" data-width="78"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Algorithms</span><span>72%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill blue" data-width="72"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Problem Solving</span><span>85%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill blue" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-cat-card reveal">
+                <div class="skill-cat-title">
+                    <div class="skill-cat-icon">🌟</div> Soft Skills
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Problem Solving</span><span>90%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Teamwork</span><span>85%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-row">
+                    <div class="skill-bar-label"><span>Public Speaking</span><span>72%</span></div>
+                    <div class="skill-bar-track">
+                        <div class="skill-bar-fill" data-width="72"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================
+       CONTACT
+  ================================================ -->
+    <section class="contact" id="contact" aria-label="Contact section">
+        <div class="section-tag reveal">✉️ Get in Touch</div>
+        <h2 class="section-heading reveal">Let's connect!</h2>
+        <p class="section-sub reveal">
+            Whether you want to collaborate on a project, discuss tech, or just say hi — I'm always up for a chat!
+        </p>
+
+        <div class="contact-inner">
+
+            <!-- Info -->
+            <div class="contact-info">
+                <div class="contact-item reveal">
+                    <div class="contact-item-icon">📍</div>
+                    <div>
+                        <div class="contact-item-label">LOCATION</div>
+                        <div class="contact-item-val">Chennai, Tamil Nadu, India</div>
+                    </div>
+                </div>
+                <div class="contact-item reveal">
+                    <div class="contact-item-icon">📧</div>
+                    <div>
+                        <div class="contact-item-label">EMAIL</div>
+                        <div class="contact-item-val">ram.kumar@sunriseschool.edu.in</div>
+                    </div>
+                </div>
+                <div class="contact-item reveal">
+                    <div class="contact-item-icon">🎓</div>
+                    <div>
+                        <div class="contact-item-label">SCHOOL</div>
+                        <div class="contact-item-val">Sunrise International Senior Secondary School, Chennai</div>
+                    </div>
+                </div>
+                <div class="contact-item reveal">
+                    <div class="contact-item-icon">🔍</div>
+                    <div>
+                        <div class="contact-item-label">INTERESTS</div>
+                        <div class="contact-item-val">Open to project collabs &amp; study groups</div>
+                    </div>
+                </div>
+
+                <!-- Social links -->
+                <div class="socials reveal" style="margin-top:24px;">
+                    <a class="social-btn" href="#" aria-label="GitHub"><span>🐙</span> GitHub</a>
+                    <a class="social-btn" href="#" aria-label="LinkedIn"><span>💼</span> LinkedIn</a>
+                    <a class="social-btn" href="#" aria-label="Codeforces"><span>🏅</span> Codeforces</a>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form-wrap reveal">
+                <div class="form-title">Drop me a message 📬</div>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-row">
+                        <label for="form-name">Your Name</label>
+                        <input id="form-name" type="text" placeholder="John Doe" required autocomplete="name" />
+                    </div>
+                    <div class="form-row">
+                        <label for="form-email">Email Address</label>
+                        <input id="form-email" type="email" placeholder="john@example.com" required
+                            autocomplete="email" />
+                    </div>
+                    <div class="form-row">
+                        <label for="form-subject">Subject</label>
+                        <input id="form-subject" type="text" placeholder="Project idea / Study help / Feedback…" />
+                    </div>
+                    <div class="form-row">
+                        <label for="form-msg">Message</label>
+                        <textarea id="form-msg" placeholder="What's on your mind?" required></textarea>
+                    </div>
+                    <button class="btn-send" type="submit">🚀 Send Message</button>
+                    <div class="form-success" id="form-success">
+                        ✅ Got your message! I'll reply as soon as I can 😊
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================
+       FOOTER
+  ================================================ -->
+    <footer aria-label="Footer">
+        <div class="footer-logo">
+            <div class="footer-logo-box">RK</div>
+            <div>
+                <div class="footer-logo-name">Ram Kumar</div>
+                <div class="footer-logo-tagline">Class XI Student · Competitive Coder · Chennai 🌊</div>
+            </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#journey">Journey</a>
+            <a href="#skills-full">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-copy">© 2025 Ram Kumar. Made with ❤️ from Chennai 🌊</div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
